@@ -25,7 +25,8 @@ jobs:
     - name: Test with pytest
       run: |
         echo "Module 0"
-        pytest tests -x -m task0_1
-        pytest tests -x -m task0_2
-        pytest tests -x -m task0_3
-        pytest tests -x -m task0_4
+        pytest tests/test_operators.py -x -m task0_1
+        pytest tests/test_operators.py -x -m task0_2
+        pytest tests/test_operators.py -x -m task0_3
+        # Если есть тесты для module
+        pytest tests/test_module.py -x
