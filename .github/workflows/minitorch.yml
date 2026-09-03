@@ -20,7 +20,7 @@ jobs:
       run: |
         sudo apt-get install graphviz
         python -m pip install --upgrade pip
-        pip install pytest pep8-naming
+        pip install pytest hypothesis
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
       run: |
@@ -29,23 +29,3 @@ jobs:
         pytest tests -x -m task0_2
         pytest tests -x -m task0_3
         pytest tests -x -m task0_4
-        # echo "Module 1"
-        # pytest tests -x -m task1_1
-        # pytest tests -x -m task1_2
-        # pytest tests -x -m task1_3
-        # pytest tests -x -m task1_4
-        # echo "Module 2"
-        # pytest tests -x -m task2_1
-        # pytest tests -x -m task2_2
-        # pytest tests -x -m task2_3
-        # pytest tests -x -m task2_4
-        # echo "Module 3"
-        # pytest tests -x -m task3_1
-        # pytest tests -x -m task3_2
-        # pytest tests -x -m task3_3
-        # pytest tests -x -m task3_4
-        # echo "Module 4"
-        # pytest tests -x -m task4_1
-        # pytest tests -x -m task4_2
-        # pytest tests -x -m task4_3
-        # pytest tests -x -m task4_4
