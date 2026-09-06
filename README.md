@@ -27,6 +27,7 @@ Parameters used:
 
 PTS=50, HIDDEN=2, RATE=0.5
 
+```
 Epoch  10  loss  32.773397  correct 32
 Epoch  20  loss  31.985409  correct 32
 Epoch  30  loss  29.498717  correct 32
@@ -45,6 +46,7 @@ Epoch  350 loss  0.533421   correct 50
 Epoch  400 loss  0.422375   correct 50
 Epoch  450 loss  0.343916   correct 50
 Epoch  500 loss  0.286488   correct 50
+```
 
 **Diag:**
 
@@ -54,6 +56,7 @@ Epoch  500 loss  0.286488   correct 50
 
 PTS=50, HIDDEN=2, RATE=0.5
 
+```
 Epoch  10  loss  18.142916  correct 43
 Epoch  20  loss  16.103058  correct 43
 Epoch  30  loss  13.680009  correct 43
@@ -70,6 +73,7 @@ Epoch  350 loss  3.071704   correct 48
 Epoch  400 loss  2.695159   correct 48
 Epoch  450 loss  2.438028   correct 48
 Epoch  500 loss  2.164222   correct 48
+```
 
 **Split:**
 
@@ -79,6 +83,7 @@ Epoch  500 loss  2.164222   correct 48
 
 PTS=50, HIDDEN=10, RATE=0.5
 
+```
 Epoch  10  loss  33.118318  correct 29
 Epoch  50  loss  28.772499  correct 37
 Epoch  100 loss  27.848460  correct 35
@@ -90,6 +95,7 @@ Epoch  350 loss  5.923841   correct 47
 Epoch  400 loss  3.593456   correct 50
 Epoch  450 loss  1.649926   correct 50
 Epoch  500 loss  1.157084   correct 50
+```
 
 **Xor:**
 
@@ -99,6 +105,7 @@ Epoch  500 loss  1.157084   correct 50
 
 PTS=50, HIDDEN=10, RATE=0.5
 
+```
 Epoch  10  loss  31.590238  correct 31
 Epoch  50  loss  23.309250  correct 37
 Epoch  100 loss  13.371239  correct 45
@@ -110,7 +117,7 @@ Epoch  350 loss  6.799923   correct 47
 Epoch  400 loss  6.923969   correct 48
 Epoch  450 loss  6.523753   correct 48
 Epoch  500 loss  7.329450   correct 48
-
+```
 
 
 * Module 2: https://classroom.github.com/a/0ZHJeTA0
