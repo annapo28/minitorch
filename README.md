@@ -5,7 +5,21 @@ The full minitorch student suite.
 To access the autograder: 
 
 * Module 0: https://classroom.github.com/a/qDYKZff9
+
+For Task 0.5: Visualization:
+
+Parameters used:
+- `linear.weight_0_0 = -10.00`
+- `linear.weight_1_0 = 0.00`
+- `linear.bias_0 = 5.00`
+
+  
+<img width="600" height="600" alt="newplot" src="https://github.com/user-attachments/assets/697999f1-99ab-47f6-920a-3d113601af4b" />
+
+
 * Module 1: https://classroom.github.com/a/6TiImUiy
+
+
 * Module 2: https://classroom.github.com/a/0ZHJeTA0
 * Module 3: https://classroom.github.com/a/U5CMJec1
 * Module 4: https://classroom.github.com/a/04QA6HZK
