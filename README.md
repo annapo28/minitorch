@@ -119,8 +119,136 @@ Epoch  450 loss  6.523753   correct 48
 Epoch  500 loss  7.329450   correct 48
 ```
 
+Diag
+
+```
+Epoch  10  loss  12.972246843268922 correct 45
+  avg time/epoch so far: 0.0448s
+Epoch  50  loss  7.310926756345862 correct 45
+  avg time/epoch so far: 0.0457s
+Epoch  100  loss  3.9175550700454562 correct 49
+  avg time/epoch so far: 0.0485s
+Epoch  150  loss  2.6196951268326196 correct 49
+  avg time/epoch so far: 0.0455s
+Epoch  200  loss  1.9627815120081697 correct 50
+  avg time/epoch so far: 0.0435s
+Epoch  250  loss  1.575298390896335 correct 50
+  avg time/epoch so far: 0.0423s
+Epoch  300  loss  1.3170496524763633 correct 50
+  avg time/epoch so far: 0.0414s
+Epoch  350  loss  1.130570834232976 correct 50
+  avg time/epoch so far: 0.0405s
+Epoch  400  loss  0.9881893107154824 correct 50
+  avg time/epoch so far: 0.0406s
+Epoch  450  loss  0.8750045371286221 correct 50
+  avg time/epoch so far: 0.0405s
+Epoch  500  loss  0.7823009087444074 correct 50
+  avg time/epoch so far: 0.0410s
+
+Total time: 20.49s, avg time/epoch: 0.0410s
+```
+
+Split
+
+```
+Epoch  10  loss  34.582669691330885 correct 34
+  avg time/epoch so far: 0.0375s
+Epoch  50  loss  34.38028060614135 correct 34
+  avg time/epoch so far: 0.0422s
+Epoch  100  loss  34.16282684072829 correct 35
+  avg time/epoch so far: 0.0406s
+Epoch  150  loss  34.01201577686937 correct 35
+  avg time/epoch so far: 0.0391s
+Epoch  200  loss  33.94296954192315 correct 35
+  avg time/epoch so far: 0.0407s
+Epoch  250  loss  33.91969240479095 correct 35
+  avg time/epoch so far: 0.0435s
+Epoch  300  loss  33.90870875632832 correct 34
+  avg time/epoch so far: 0.0455s
+Epoch  350  loss  33.905875631284495 correct 34
+  avg time/epoch so far: 0.0453s
+Epoch  400  loss  33.90534074095282 correct 32
+  avg time/epoch so far: 0.0443s
+Epoch  450  loss  33.90509965741012 correct 32
+  avg time/epoch so far: 0.0436s
+Epoch  500  loss  33.90502870894615 correct 32
+  avg time/epoch so far: 0.0447s
+
+Total time: 22.35s, avg time/epoch: 0.0447s
+```
+
+Xor 
+
+```
+Epoch  10  loss  32.68867856205831 correct 35
+  avg time/epoch so far: 0.3408s
+Epoch  50  loss  20.12770289409825 correct 39
+  avg time/epoch so far: 0.3096s
+Epoch  100  loss  17.38670674824629 correct 41
+  avg time/epoch so far: 0.3071s
+Epoch  150  loss  14.410135976735013 correct 43
+  avg time/epoch so far: 0.3054s
+Epoch  200  loss  12.99663006546026 correct 44
+  avg time/epoch so far: 0.3040s
+Epoch  250  loss  10.302692924014433 correct 45
+  avg time/epoch so far: 0.3034s
+Epoch  300  loss  17.86782401352321 correct 42
+  avg time/epoch so far: 0.3035s
+Epoch  350  loss  27.64030348089915 correct 39
+  avg time/epoch so far: 0.3038s
+Epoch  400  loss  5.229879113848728 correct 49
+  avg time/epoch so far: 0.3040s
+Epoch  450  loss  9.631913439154568 correct 45
+  avg time/epoch so far: 0.3042s
+Epoch  500  loss  4.288164120194821 correct 49
+  avg time/epoch so far: 0.3038s
+
+Total time: 151.91s, avg time/epoch: 0.3038s
+```
 
 * Module 2: https://classroom.github.com/a/0ZHJeTA0
 * Module 3: https://classroom.github.com/a/U5CMJec1
+
+Task 3.5:
+
+Simple
+
+```
+Epoch  10  loss  27.351249801185162 correct 33
+  avg time/epoch so far: 0.0528s
+Epoch  50  loss  7.01672338764293 correct 49
+  avg time/epoch so far: 0.0462s
+Epoch  100  loss  3.1598004700836224 correct 50
+  avg time/epoch so far: 0.0461s
+Epoch  150  loss  1.93055671396475 correct 50
+  avg time/epoch so far: 0.0482s
+Epoch  200  loss  1.3630461216930534 correct 50
+  avg time/epoch so far: 0.0476s
+Epoch  250  loss  1.0305459793912912 correct 50
+  avg time/epoch so far: 0.0478s
+Epoch  300  loss  0.8137848035650413 correct 50
+  avg time/epoch so far: 0.0470s
+Epoch  350  loss  0.6641887664091034 correct 50
+  avg time/epoch so far: 0.0474s
+Epoch  400  loss  0.556278601893604 correct 50
+  avg time/epoch so far: 0.0475s
+Epoch  450  loss  0.4769898803627563 correct 50
+  avg time/epoch so far: 0.0467s
+Epoch  500  loss  0.41798514317967517 correct 50
+  avg time/epoch so far: 0.0468s
+
+Total time: 23.40s, avg time/epoch: 0.0468s
+```
+В итоге: 
+
+| Dataset | Hidden | Final loss | Correct | Avg time/epoch |
+|---------|--------|-----------|---------|-----------------|
+| Simple  | 2      | 3.17      | 49/50   | 0.0384s         |
+| Diag    | 2      | 0.42      | 50/50   | 0.0417s         |
+| Split   | 2      | 2.74      | 50/50   | 0.0424s         |
+| Xor     | 10     | 4.29      | 49/50   | 0.3038s         |
+
+
+
 * Module 4: https://classroom.github.com/a/04QA6HZK
 * Quizzes: https://classroom.github.com/a/bGcGc12k
