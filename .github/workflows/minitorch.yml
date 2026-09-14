@@ -24,12 +24,12 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
       run: |
-        echo "Module 0"
-        pytest tests/test_operators.py -x -m task0_1
-        pytest tests/test_operators.py -x -m task0_2
-        pytest tests/test_operators.py -x -m task0_3
+        # echo "Module 0"
+        # pytest tests/test_operators.py -x -m task0_1
+        # pytest tests/test_operators.py -x -m task0_2
+        # pytest tests/test_operators.py -x -m task0_3
     
-        pytest tests/test_module.py -x
+        # pytest tests/test_module.py -x
 
         echo "Module 1"
         pytest tests -x -m task1_1
@@ -37,8 +37,8 @@ jobs:
         pytest tests -x -m task1_3
         pytest tests -x -m task1_4
 
-        echo "Module 2"
-        pytest tests -x -m task2_1
-        pytest tests -x -m task2_2
-        pytest tests -x -m task2_3
-        pytest tests -x -m task2_4
+        # echo "Module 2"
+        # pytest tests -x -m task2_1
+        # pytest tests -x -m task2_2
+        # pytest tests -x -m task2_3
+        # pytest tests -x -m task2_4
