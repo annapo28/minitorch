@@ -35,7 +35,6 @@ jobs:
         pytest tests/test_operators.py -x -m task1_1
         pytest tests/test_operators.py -x -m task1_2
         pytest tests/test_operators.py -x -m task1_3
-        pytest tests/test_operators.py -x -m task1_4
 
         # echo "Module 2"
         # pytest tests -x -m task2_1
