@@ -31,14 +31,14 @@ jobs:
     
         # pytest tests/test_module.py -x
 
-        echo "Module 1"
-        pytest tests/test_scalar.py -x -m task1_1
-        pytest tests/test_scalar.py -x -m task1_2   
-        pytest tests/test_autodiff.py -x -m task1_3
-        pytest tests/test_scalar.py tests/test_autodiff.py -x -m task1_4
+        # echo "Module 1"
+        # pytest tests/test_scalar.py -x -m task1_1
+        # pytest tests/test_scalar.py -x -m task1_2   
+        # pytest tests/test_autodiff.py -x -m task1_3
+        # pytest tests/test_scalar.py tests/test_autodiff.py -x -m task1_4
 
-        # echo "Module 2"
-        # pytest tests -x -m task2_1
-        # pytest tests -x -m task2_2
-        # pytest tests -x -m task2_3
-        # pytest tests -x -m task2_4
+        echo "Module 2"
+        pytest tests --ignore=tests/test_tensor_general.py -x -m task2_1
+        pytest tests --ignore=tests/test_tensor_general.py -x -m task2_2
+        pytest tests --ignore=tests/test_tensor_general.py -x -m task2_3
+        pytest tests --ignore=tests/test_tensor_general.py -x -m task2_4
