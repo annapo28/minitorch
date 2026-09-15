@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.11]
+        python-version: [3.8]
 
     steps:
     - uses: actions/checkout@v2
@@ -20,25 +20,36 @@ jobs:
       run: |
         sudo apt-get install graphviz
         python -m pip install --upgrade pip
-        pip install pytest hypothesis
+        pip install flake8 pytest pep8-naming
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Lint with flake8
+      run: |
+        # stop the build if there are Python syntax errors or undefined names
+        flake8 --ignore "N801, E203, E266, E501, W503, F812, F401, F841, E741, N803, N802, N806" minitorch/ tests/ project/
     - name: Test with pytest
       run: |
-        # echo "Module 0"
-        # pytest tests/test_operators.py -x -m task0_1
-        # pytest tests/test_operators.py -x -m task0_2
-        # pytest tests/test_operators.py -x -m task0_3
-    
-        # pytest tests/test_module.py -x
-
+        echo "Module 0"
+        pytest tests -x -m task0_1
+        pytest tests -x -m task0_2
+        pytest tests -x -m task0_3
+        pytest tests -x -m task0_4
         # echo "Module 1"
-        # pytest tests/test_scalar.py -x -m task1_1
-        # pytest tests/test_scalar.py -x -m task1_2   
-        # pytest tests/test_autodiff.py -x -m task1_3
-        # pytest tests/test_scalar.py tests/test_autodiff.py -x -m task1_4
-
-        echo "Module 2"
-        pytest tests --ignore=tests/test_tensor_general.py -x -m task2_1
-        pytest tests --ignore=tests/test_tensor_general.py -x -m task2_2
-        pytest tests --ignore=tests/test_tensor_general.py -x -m task2_3
-        pytest tests --ignore=tests/test_tensor_general.py -x -m task2_4
+        # pytest tests -x -m task1_1
+        # pytest tests -x -m task1_2
+        # pytest tests -x -m task1_3
+        # pytest tests -x -m task1_4
+        # echo "Module 2"
+        # pytest tests -x -m task2_1
+        # pytest tests -x -m task2_2
+        # pytest tests -x -m task2_3
+        # pytest tests -x -m task2_4
+        # echo "Module 3"
+        # pytest tests -x -m task3_1
+        # pytest tests -x -m task3_2
+        # pytest tests -x -m task3_3
+        # pytest tests -x -m task3_4
+        # echo "Module 4"
+        # pytest tests -x -m task4_1
+        # pytest tests -x -m task4_2
+        # pytest tests -x -m task4_3
+        # pytest tests -x -m task4_4
